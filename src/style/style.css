@@ -1,0 +1,98 @@
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Imagens com descrição acessível */
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Links acessíveis */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botões de acessibilidade */
+        .acessibilidade {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .acessibilidade button {
+            font-size: 14px;
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Contraste elevado */
+        .alto-contraste {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Flexbox para atrações lado a lado */
+        .atracoes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .atracao {
+            flex: 1 1 calc(33.333% - 20px);
+            /* Tamanho de 1/3 da linha com margem */
+            background-color: #f9f9f9;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Responsividade: Ajustar o layout em telas menores */
+        @media (max-width: 900px) {
+            .atracao {
+                flex: 1 1 calc(50% - 20px);
+                /* Tamanho de 1/2 da linha */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .atracao {
+                flex: 1 1 100%;
+                /* Tamanho de 100% da linha */
+            }
+        }
